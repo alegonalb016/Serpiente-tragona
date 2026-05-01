@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Serpiente Tragona</title>
+  <link rel="stylesheet" href="CSS\snake.css" />
+</head>
+<body>
+
+  <div class="contenedor">
+    <header>
+      <h1>La serpiente tragona 🐍</h1>
+      <div class="marcadores">
+        <div class="marcador">
+          <span class="etiqueta">Puntos</span>
+          <span class="numero" id="puntos">0</span>
+        </div>
+        <div class="marcador">
+          <span class="etiqueta">Mejor</span>
+          <span class="numero" id="mejor">0</span>
+        </div>
+        <div class="marcador">
+          <span class="etiqueta">Nivel</span>
+          <span class="numero" id="nivel">1</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="caja-canvas">
+      <canvas id="miCanvas" width="400" height="400"></canvas>
+
+      <div class="pantalla" id="pantalla">
+        <h2 id="tituloPantalla">La serpiente tragona</h2>
+        <p id="mensajePantalla">Come las manzanas sin chocar con las paredes ni contigo mismo</p>
+        <button id="botonJugar">Jugar</button>
+      </div>
+    </div>
+
+    <!-- Botones de dirección para móvil -->
+    <div class="botones-movimiento">
+      <div class="fila-botones">
+        <button class="tecla" data-dir="arriba">↑</button>
+      </div>
+      <div class="fila-botones">
+        <button class="tecla" data-dir="izquierda">←</button>
+        <button class="tecla" data-dir="abajo">↓</button>
+        <button class="tecla" data-dir="derecha">→</button>
+      </div>
+    </div>
+
+    <p class="ayuda">Usa las teclas de flecha o los botones · Enter para empezar</p>
+
+    <!-- AJUSTES  -->
+    <div class="ajustes">
+      <h3>⚙️ Ajustes</h3>
+      <div class="opciones-ajustes">
+        <button id="botonMusica" class="boton-ajuste activo">🎵 Musica: ON</button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Música de fondo  -->
+  <script src="JS\snake.js"></script>
+</body>
+</html>
